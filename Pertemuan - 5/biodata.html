@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Biodata</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>Halaman Biodata</h2>
+    </header>
+
+    <div class="container-biodata">
+        <h3 id="judul-form">Isi Formulir Biodata Anda</h3>
+        
+        <form id="form-biodata" action="#" method="POST">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label><br>
+                <input type="text" id="nama" class="input-teks" name="nama" placeholder="nama lengkap">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" class="input-teks" name="email" placeholder="@email.com">
+            </div>
+
+            <div class="form-group">
+                <label for="telepon">Nomor Telepon / HP:</label><br>
+                <input type="tel" id="telepon" class="input-teks" name="telepon" placeholder="081234567890">
+            </div>
+
+            <div class="form-group">
+                <label for="tgl_lahir">Tanggal Lahir:</label><br>
+                <input type="date" id="tgl_lahir" class="input-teks" name="tgl_lahir">
+            </div>
+
+            <div class="form-group">
+                <label>Jenis Kelamin:</label><br>
+                <input type="radio" id="pria" name="gender" value="pria">
+                <label for="pria">Pria</label>
+                <input type="radio" id="wanita" name="gender" value="wanita">
+                <label for="wanita">Wanita</label>
+            </div>
+
+            <div class="form-group">
+                <label for="agama">Agama:</label><br>
+                <select id="agama" class="input-teks" name="agama">
+                    <option value="">-- Pilih Agama --</option>
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen Protestan</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="buddha">Buddha</option>
+                    <option value="konghucu">Konghucu</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Hobi:</label><br>
+                <input type="checkbox" id="hobi1" name="hobi" value="Membaca">
+                <label for="hobi1">Membaca</label>
+                <input type="checkbox" id="hobi2" name="hobi" value="Olahraga">
+                <label for="hobi2">Olahraga</label>
+                <input type="checkbox" id="hobi3" name="hobi" value="Coding">
+                <label for="hobi3">Coding</label>
+            </div>
+
+            <div class="form-group">
+                <label for="alamat">Alamat Tinggal:</label><br>
+                <textarea id="alamat" class="input-area" name="alamat" rows="4" placeholder="Masukkan alamat lengkap"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="foto">Unggah Foto Profil (Opsional):</label><br>
+                <input type="file" id="foto" name="foto" style="margin-top: 5px;">
+            </div>
+
+            <button type="submit" id="tombol-kirim" class="btn-submit">Kirim Biodata</button>
+            <a href="index.html" class="link-kembali">Kembali ke Beranda</a>
+        </form>
+    </div>
+
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+
+</body>
+</html>
